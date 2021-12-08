@@ -1,5 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'The Coffee Blog'
-  }
+    title: 'Explore the islands'
+  },
+
+  plugins: [
+    'gatsby-plugin-netlify-cms'
+  ]
 };

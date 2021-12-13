@@ -9,19 +9,24 @@ import styles from './index.module.css';
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
   {
-    site {
-      siteMetadata {
-        title
-      }
+    markdownRemark {
+        frontmatter {
+            island
+            region
+            area
+            population
+            information
+            image
+            lat
+            long            
+        }
     }
   }
 `);
 
   return (
     <Layout>
-      <div id={styles.hero}>
-        <h1>{data.site.siteMetadata.title}</h1>
-      </div>
+      <IslandList data = {data}/>
     </Layout>
   );
 }

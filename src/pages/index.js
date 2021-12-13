@@ -12,7 +12,7 @@ export default function IndexPage() {
   {
     markdownRemark {
         frontmatter {
-            island
+            title
             region
             area
             population

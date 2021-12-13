@@ -13,8 +13,8 @@ collections:
 #    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     slug: "{{slug}}"
     fields:
-      - label: "Island"
-        name: "island"
+      - label: "Title"
+        name: "title"
         widget: "string"
       - label: "Region"
         name: "region"

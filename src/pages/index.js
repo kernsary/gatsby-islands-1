@@ -8,27 +8,27 @@ import IslandList from '../components/IslandList';
 // import styles from './index.module.css';
 
 export default function IndexPage() {
-//   const data = useStaticQuery(graphql`
-//   {
-//     markdownRemark {
-//         frontmatter {
-//             island
-//             region
-//             area
-//             population
-//             information
-//             image
-//             lat
-//             long
-//         }
-//     }
-//   }
-// `);
+  const data = useStaticQuery(graphql`
+  {
+    markdownRemark {
+        frontmatter {
+            island
+            region
+            area
+            population
+            information
+            image
+            lat
+            long
+        }
+    }
+  }
+`);
 
   return (
     <Layout>
-        'Dummy layout text'
-      {/*<IslandList data = {data}/>*/}
+        {/*'Dummy layout text'*/}
+      <IslandList data = {data}/>
     </Layout>
   );
 }

@@ -11,6 +11,7 @@ module.exports = {
         name: 'islands',
         path: 'src/islands'
       }
-    }
+    },
+      'gatsby-transformer-remark'
   ]
 };

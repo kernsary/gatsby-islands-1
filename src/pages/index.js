@@ -10,17 +10,21 @@ import IslandList from '../components/IslandList';
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
   {
-    markdownRemark {
-        frontmatter {
-            title
-            region
-            area
-            population
-            information
-            image
-            lat
-            long
-        }
+    allMarkdownRemark {
+        edges {
+            node {
+                frontmatter {
+                    title
+                    region
+                    area
+                    population
+                    information
+                    image
+                    lat
+                    long
+                }
+               }
+              }
     }
   }
 `);

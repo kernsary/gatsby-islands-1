@@ -7,7 +7,7 @@ export default function IslandList({data}) {
     return (
        <div>
            {data.allMarkdownRemark.edges.map(edge => (
-               <Island edge={edge.node}/>
+               <Island island = {edge.node.frontmatter}/>
            ))}
        </div>
     );

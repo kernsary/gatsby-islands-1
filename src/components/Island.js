@@ -5,6 +5,6 @@ import React from 'react';
 
 export default function Island({island}) {
     return (
-        <h3>{island.island}</h3>
+        <h3>{island.title}</h3>
     );
 }

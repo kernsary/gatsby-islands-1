@@ -1,13 +1,31 @@
 import React from 'react';
 
-import Island from './Island';
+import {graphql, useStaticQuery} from 'gatsby';
 
-export default function IslandList({data}) {
+import { Link } from 'gatsby';
+
+export default function IslandList() {
+    const data = useStaticQuery(graphql`
+      {
+        allMarkdownRemark {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                    }
+                    fields {
+                        slug
+                    }
+                }
+            }
+        }
+      }
+    `);
 
     return (
        <div>
            {data.allMarkdownRemark.edges.map(edge => (
-               <Island island = {edge.node.frontmatter}/>
+               <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link></div>
            ))}
        </div>
     );

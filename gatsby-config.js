@@ -4,6 +4,13 @@ module.exports = {
   },
 
   plugins: [
-    'gatsby-plugin-netlify-cms'
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'islands',
+        path: 'src/islands'
+      }
+    }
   ]
 };

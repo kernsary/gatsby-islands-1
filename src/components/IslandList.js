@@ -5,6 +5,8 @@ import {graphql, useStaticQuery} from 'gatsby';
 import { Link } from 'gatsby';
 
 export default function IslandList( {region} ) {
+
+
     const data = useStaticQuery(graphql`
       {
         allMarkdownRemark
@@ -16,6 +18,7 @@ export default function IslandList( {region} ) {
                 node {
                     frontmatter {
                         title
+                        region
                     }
                     fields {
                         slug
@@ -29,7 +32,7 @@ export default function IslandList( {region} ) {
     return (
        <div>
            {data.allMarkdownRemark.edges.map(edge => (
-               <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link></div>
+               <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.region === region && edge.node.frontmatter.title}</Link></div>
            ))}
        </div>
     );

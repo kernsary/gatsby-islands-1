@@ -11,7 +11,7 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <IslandList/>
+      <IslandList region='Clyde'/>
     </Layout>
   );
 }

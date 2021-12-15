@@ -11,7 +11,13 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <IslandList region='Clyde'/>
+      <IslandList region='Shetland'/>
+      <IslandList region='Orkney'/>
+      <IslandList region='Outer Hebrides'/>
+      <IslandList region='Skye'/>
+      <IslandList region='Mull'/>
+      <IslandList region='Islay'/>
+      <IslandList region='Firth of Clyde'/>
     </Layout>
   );
 }

@@ -30,10 +30,13 @@ export default function IslandList( {region} ) {
     `);
 
     return (
-       <div>
-           {data.allMarkdownRemark.edges.map(edge => (
-               <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.region === region && edge.node.frontmatter.title}</Link></div>
-           ))}
-       </div>
+        <div>
+           <h1>{region}</h1>
+           <div>
+               {data.allMarkdownRemark.edges.map(edge => (
+                   <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.region === region && edge.node.frontmatter.title}</Link></div>
+               ))}
+           </div>
+        </div>
     );
 }

@@ -4,10 +4,14 @@ import {graphql, useStaticQuery} from 'gatsby';
 
 import { Link } from 'gatsby';
 
-export default function IslandList() {
+export default function IslandList( {region} ) {
     const data = useStaticQuery(graphql`
       {
-        allMarkdownRemark {
+        allMarkdownRemark
+            (
+            sort: { fields: frontmatter___title, order: ASC }
+            )
+         {
             edges {
                 node {
                     frontmatter {

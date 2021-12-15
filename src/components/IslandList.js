@@ -31,7 +31,7 @@ export default function IslandList( {region} ) {
 
     return (
         <div>
-           <h1>{region}</h1>
+           <h3>{region}</h3>
            <div>
                {data.allMarkdownRemark.edges.map(edge => (
                    <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.region === region && edge.node.frontmatter.title}</Link></div>

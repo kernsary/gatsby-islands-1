@@ -1,32 +1,18 @@
 import React from 'react';
 
-import {graphql, useStaticQuery} from 'gatsby';
-
-import { Link } from 'gatsby';
+import IslandList from "./IslandList";
 
 export default function RegionList() {
-    // const data = useStaticQuery(graphql`
-    //   {
-    //     allMarkdownRemark {
-    //         edges {A
-    //             node {
-    //                 frontmatter {
-    //                     title
-    //                 }
-    //                 fields {
-    //                     slug
-    //                 }
-    //             }
-    //         }
-    //     }
-    //   }
-    // `);
-    //
-    // return (
-    //     <div>
-    //         {data.allMarkdownRemark.edges.map(edge => (
-    //             <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link></div>
-    //         ))}
-    //     </div>
-    // );
+
+    return (
+        <div>
+            <IslandList region='Shetland'/>
+            <IslandList region='Orkney'/>
+            <IslandList region='Outer Hebrides'/>
+            <IslandList region='Skye'/>
+            <IslandList region='Mull'/>
+            <IslandList region='Islay'/>
+            <IslandList region='Firth of Clyde'/>
+        </div>
+    );
 }

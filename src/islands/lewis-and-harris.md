@@ -1,0 +1,7 @@
+---
+title: Lewis and Harris
+region: Outer Hebrides
+information: Lewis is the north part of the island and Harris, with its wild
+  hill country, is in the south. Both parts have amazing sandy beaches.
+image: /img/lewis-and-harris-152926_dcccf7f2.jpg
+---

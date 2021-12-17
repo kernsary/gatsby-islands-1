@@ -11,6 +11,8 @@ export default function IslandTemplate({ data }) {
         <Layout>
             <div>
                 <h1>{data.markdownRemark.frontmatter.title}</h1>
+                <p>{data.markdownRemark.frontmatter.information}</p>
+                <img src={data.markdownRemark.frontmatter.image}></img>
             </div>
         </Layout>
     );
@@ -21,6 +23,8 @@ export const query = graphql`
         markdownRemark(fields: { slug: { eq: $slug } }) {
             frontmatter {
                 title
+                information
+                image
             }
         }
     }

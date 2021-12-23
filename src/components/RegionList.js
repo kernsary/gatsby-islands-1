@@ -2,10 +2,12 @@ import React from 'react';
 
 import IslandList from "./IslandList";
 
+import styles from './regionlist.module.css';
+
 export default function RegionList() {
 
     return (
-        <div>
+        <div id={styles.regionlist}>
             <IslandList region='Shetland'/>
             <IslandList region='Orkney'/>
             <IslandList region='Outer Hebrides'/>

@@ -1,6 +1,5 @@
 #header {
   font-family: 'Oswald', sans-serif;
-  /*background: url('/coffee.jpg');*/
   background-size: cover;
   color: #FFFFFF;
 }
@@ -17,4 +16,10 @@
 #header h1 a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

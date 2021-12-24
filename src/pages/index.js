@@ -11,7 +11,10 @@ export default function IndexPage() {
 
   return (
     <Layout id={styles.indexcontainer}>
-        <RegionList/>
+        <div>
+            <h2>Explore the islands of Scotland</h2>
+            <RegionList/>
+        </div>
 
         {/*{typeof window !== 'undefined' &&*/}
         {/*<LeafletMap*/}

@@ -1,0 +1,11 @@
+#h3 {
+    background-color: sienna;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border: 0px none;
+}
+
+#link a {
+    color: black;
+    text-decoration: none;
+}

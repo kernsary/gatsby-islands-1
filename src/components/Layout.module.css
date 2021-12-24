@@ -1,11 +1,11 @@
 #header {
-  font-family: 'Oswald', sans-serif;
-  background-size: cover;
-  color: #FFFFFF;
+  /*font-family: 'Oswald', sans-serif;*/
+  /*background-size: cover;*/
+  /*color: #FFFFFF;*/
 }
 
 #header #inner {
-  background: rgba(119, 79, 56, 0.85);
+  background: cadetblue;
   padding: 1rem;
 }
 
@@ -14,7 +14,7 @@
 }
 
 #header h1 a {
-  color: #FFFFFF;
+  color: white;
   text-decoration: none;
 }
 
@@ -22,4 +22,5 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 5rem 5rem 5rem 5rem;
 }

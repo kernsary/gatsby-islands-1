@@ -4,6 +4,8 @@ import {graphql, useStaticQuery} from 'gatsby';
 
 import { Link } from 'gatsby';
 
+import styles from "./islandlist.module.css";
+
 export default function IslandList( {region} ) {
 
 
@@ -31,10 +33,10 @@ export default function IslandList( {region} ) {
 
     return (
         <div>
-           <h3>{region}</h3>
+           <h3 id={styles.h3}>{region}</h3>
            <div>
                {data.allMarkdownRemark.edges.map(edge => (
-                   <div><Link to={edge.node.fields.slug}>{edge.node.frontmatter.region === region && edge.node.frontmatter.title}</Link></div>
+                   <div id={styles.link}><Link to={edge.node.fields.slug}>{edge.node.frontmatter.region === region && edge.node.frontmatter.title}</Link></div>
                ))}
            </div>
         </div>

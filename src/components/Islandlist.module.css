@@ -1,8 +1,19 @@
+#container {
+    margin-bottom: 72px;
+    margin-right: 200px;
+}
+
 #h3 {
     background-color: sienna;
     color: white;
     padding: 0.5rem 0.5rem;
     border: 0px none;
+    width: 200px;
+}
+
+#link {
+    font-size: 24px;
+    margin-bottom: 8px;
 }
 
 #link a {

@@ -2,7 +2,7 @@ import React from 'react';
 
 import IslandList from "./IslandList";
 
-import styles from './regionlist.module.css';
+import styles from './Regionlist.module.css';
 
 export default function RegionList() {
 

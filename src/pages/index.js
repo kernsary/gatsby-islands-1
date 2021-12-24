@@ -5,15 +5,17 @@ import RegionList from '../components/RegionList'
 // import LeafletMap from '../components/LeafletMap'
 import Map from '../components/Map'
 
-import styles from './index.module.css';
+// import styles from './index.module.css';
 
 export default function IndexPage() {
 
   return (
-    <Layout id={styles.indexcontainer}>
+    <Layout>
         <div>
             <h2>Explore the islands of Scotland</h2>
-            <RegionList/>
+            <div>
+                <RegionList/>
+            </div>
         </div>
 
         {/*{typeof window !== 'undefined' &&*/}

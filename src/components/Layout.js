@@ -5,8 +5,8 @@ import { Link } from 'gatsby';
 
 export default function Layout({ children }) {
   return (
-    <div>
-      <header id={styles.header}>
+    <div id={styles.header}>
+      <header>
         <div id={styles.inner}>
             <h1><Link to={"/"}>Scottish islands explorer</Link></h1>
         </div>

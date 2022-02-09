@@ -1,7 +1,3 @@
-#header {
-
-}
-
 #header #inner {
   background: cadetblue;
   padding: 1rem;
@@ -14,6 +10,7 @@
 #header h1 a {
   color: white;
   text-decoration: none;
+  font-size: 48px;
 }
 
 #main {
@@ -21,4 +18,8 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 5rem 5rem 5rem 5rem;
+}
+
+h2 {
+  font-size: 32px;
 }
